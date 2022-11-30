@@ -10,6 +10,8 @@ After you’ve got that working, follow the instructions below to the [Put Messa
 
 	- For example: task with title *[SharePoint Online] OneDrive admin blah blah blah* goes in the `SharePoint Online` bucket
 
+    - TODO: some of the titles have changed to include multiple identifiers separated by commas, so we'll have to implement a more flexible Title-to-Bucket mapping solution so that [Microsoft 365 Apps, Microsoft Teams] will go into the Microsoft Teams bucket. This will also allow for organizations to put messages with different titles into the same bucket, uif desired.
+
 2. Create one bucket in your Planner plan for each of the following (assuming you checked all services when setting up the flow):
     ```
     Exchange Online
@@ -51,6 +53,8 @@ After you’ve got that working, follow the instructions below to the [Put Messa
     | Green	| Stay Informed |
 
 5. Note: You can use different label colors than these, just remember which one is which to update below in step 4 
+
+    - TODO: `Tags` in the message look helpful, maybe we should map these to labels as well to be able to quickly identify User impact, for example
  
 After you [import the flow into Power Automate](https://flow.microsoft.com/en-us/blog/import-export-bap-packages/), you’ll need to make some changes:
  
